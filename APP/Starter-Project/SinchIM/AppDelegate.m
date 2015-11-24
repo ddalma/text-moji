@@ -8,8 +8,8 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    id config = [SinchService configWithApplicationKey: @"<YOUR__APP_KEY">
-                                     applicationSecret: @"<YOUR_APP_SECRET">
+    id config = [SinchService configWithApplicationKey: @"<__APP_KEY">
+                                     applicationSecret: @"<_APP_SECRET">
                                        environmentHost: @"sandbox.sinch.com"
                       pushNotificationsWithEnvironment: SINAPSEnvironmentAutomatic];
     id<SINService> sinch = [SinchService serviceWithConfig:config];
